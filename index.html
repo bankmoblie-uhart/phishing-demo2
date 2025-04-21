@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign in - University of Hartford</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <div class="login-container">
+    <div class="login-box">
+      <h1><span class="uh-logo">UNIVERSITY OF HARTFORD</span></h1>
+      <h2>Sign in</h2>
+      <form onsubmit="redirectToRealSite(); return false;">
+        <input type="email" name="email" placeholder="example@hartford.edu" required />
+        <a href="#">Can’t access your account?</a>
+        <button type="submit">Next</button>
+      </form>
+      <div class="note">
+        If you need assistance with your password, do not click the link above. Please visit:  
+        <br /><a href="https://www.hartford.edu/reset">https://www.hartford.edu/reset</a>
+      </div>
+    </div>
+    <div class="options-box">
+      🔑 Sign-in options
+    </div>
+  </div>
+
+  <script>
+    function redirectToRealSite() {
+      // Simulate success
+      window.location.href = "https://www.hartford.edu";
+    }
+  </script>
+</body>
+</html>
